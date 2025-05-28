@@ -75,6 +75,12 @@ def protected():
         return redirect(url_for("login"))
     return render_template("protected.html", user=user)
 
+@app.route("/dashboard")
+def dashboard():
+    if not session.get("user"):
+        return redirect("/login")
+    return render_template("dashboard.html")
+
 
 # Start Flask app
 if __name__ == "__main__":
