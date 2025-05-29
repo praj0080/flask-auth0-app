@@ -45,15 +45,13 @@ pip install flask authlib python-dotenv
 Create a `.env` file in the root folder with your Auth0 credentials:
 
 ```ini
-AUTH0_CLIENT_ID=your-client-id-here
-AUTH0_CLIENT_SECRET=your-client-secret-here
-AUTH0_DOMAIN=your-domain.auth0.com
+AUTH0_CLIENT_ID=1iJfZId8CsZgUtcTdBCKk14BMiS40dSg
+AUTH0_CLIENT_SECRET=F3HYVzCMMhA5Vzd_QxvJAATPPnYBOJDQJcsAlkFUAHkJ06SDuqi3LvQePS2plFcJ
+AUTH0_DOMAIN=dev-65yuhxtq0n6jvmfd.ca.auth0.com
 AUTH0_CALLBACK_URL=http://localhost:3000/callback
+APP_SECRET_KEY=1a80923a3f098aed4256347ab4595d2d220fd549e34a4348327838344d2808d8
 
-FLASK_APP=server.py
-FLASK_ENV=development
-APP_SECRET_KEY=your-random-secret-key
-PORT=3000
+
 ```
 
 Generate a secure secret key for `APP_SECRET_KEY` using:
