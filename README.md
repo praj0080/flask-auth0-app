@@ -88,6 +88,11 @@ You should be able to:
 
 - `/protected`: Only accessible when logged in
 - If a non-authenticated user tries to access it, they are redirected to `/login`
+### 🔸 `/dashboard`
+
+- Accessible only to authenticated users.
+- Displays a personalized welcome message and user info.
+
 
 ---
 
