@@ -150,7 +150,5 @@ flask-auth0-app/
 
 ---
 
-## 📜 License
 
-MIT License
  
