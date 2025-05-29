@@ -57,7 +57,8 @@ APP_SECRET_KEY=1a80923a3f098aed4256347ab4595d2d220fd549e34a4348327838344d2808d8
 Generate a secure secret key for `APP_SECRET_KEY` using:
 
 ```bash
-openssl rand -hex 32
+python -c "import secrets; print(secrets.token_hex(32))"
+
 ```
 
 ---
@@ -65,7 +66,7 @@ openssl rand -hex 32
 ## 🔧 Running the App
 
 ```bash
-flask run
+python server.py
 ```
 
 Then open your browser and go to:
